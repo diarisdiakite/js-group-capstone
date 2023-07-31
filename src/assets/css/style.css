@@ -2,6 +2,7 @@
   --my-main-black: rgb(0, 0, 0);
   --my-golden-orange: rgb(240, 138, 75);
   --my-sky-blue: skyblue;
+  --my-header-footer-bg-color: rgb(243, 241, 238);
 }
 
 * {
@@ -50,4 +51,24 @@ ul a {
 
 nav a:hover {
   text-decoration: underline;
+}
+
+
+/* Footer section */
+
+.footer-section {
+  border-top: 1.5px solid black;
+  border-radius: 0.1%;
+  width: 100%;
+  height: 5%;
+  text-align: center;
+  background-color: var(--my-header-footer-bg-color);
+  position: fixed;
+  bottom: 0;
+  padding: 0.5rem;
+}
+
+.footer-text {
+  padding: 1rem;
+  margin: 1rem;
 }

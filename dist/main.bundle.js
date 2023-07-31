@@ -9,13 +9,33 @@
  */
 (self["webpackChunkwebpack_demo"] = self["webpackChunkwebpack_demo"] || []).push([["main"],{
 
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _assets_css_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/css/style.css */ \"./src/assets/css/style.css\");\n/* harmony import */ var _modules_globalElements_footer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/globalElements/footer */ \"./src/modules/globalElements/footer.js\");\n\n\nvar myFooter = document.getElementById('footer-section');\nmyFooter.innerHTML += footerText;\n\n//# sourceURL=webpack://webpack-demo/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/modules/globalElements/footer.js":
+/*!**********************************************!*\
+  !*** ./src/modules/globalElements/footer.js ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar Didy = /*#__PURE__*/React.createElement(\"a\", {\n  href: \"https://github.com/diarisdiakite\"\n}, \"Didy\");\nvar Asiimwe = /*#__PURE__*/React.createElement(\"a\", {\n  href: \"https://github.com/As1imwe-Mark\"\n}, \"Asiimwe\");\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (\"Copyright @ 2023 Powered by \".concat(Didy, \" and \").concat(Asiimwe, \". All Rights Reserved.\"));\n\n//# sourceURL=webpack://webpack-demo/./src/modules/globalElements/footer.js?");
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/assets/css/style.css":
 /*!************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./src/assets/css/style.css ***!
   \************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \":root {\\r\\n  --my-main-black: rgb(0, 0, 0);\\r\\n  --my-golden-orange: rgb(240, 138, 75);\\r\\n  --my-sky-blue: skyblue;\\r\\n}\\r\\n\\r\\n* {\\r\\n  margin: 0;\\r\\n  padding: 0;\\r\\n  box-sizing: border-box;\\r\\n}\\r\\n\\r\\nbody {\\r\\n  font-size: 16px;\\r\\n  font-family: 'Lato', sans-serif;\\r\\n  overflow: hidden;\\r\\n}\\r\\n\\r\\n.flex-colum {\\r\\n  display: flex;\\r\\n  flex-direction: column;\\r\\n}\\r\\n\\r\\n.flex {\\r\\n  display: flex;\\r\\n  flex-direction: row;\\r\\n  justify-content: flex-end;\\r\\n}\\r\\n\\r\\nmain {\\r\\n  width: 100%;\\r\\n  height: 100vh;\\r\\n  display: flex;\\r\\n  flex-direction: column;\\r\\n  background-size: cover;\\r\\n  background-color: red;\\r\\n}\\r\\n\\r\\nh1 {\\r\\n  margin: 0.5em 0;\\r\\n}\\r\\n\\r\\nbutton {\\r\\n  font-family: 'Lato', sans-serif;\\r\\n  border: none;\\r\\n  cursor: pointer;\\r\\n  height: 1.5rem;\\r\\n  width: 4rem;\\r\\n  border-radius: 4px;\\r\\n  box-shadow: rgba(119, 117, 117, 0.66) 0 1px 4px;\\r\\n  background-color: #fff;\\r\\n}\\r\\n\\r\\n.add-button {\\r\\n  border: none;\\r\\n  height: 2rem;\\r\\n  width: 4.5rem;\\r\\n  font-family: 'Lato', sans-serif;\\r\\n  border-radius: 4px;\\r\\n  box-shadow: rgba(0, 0, 0, 0.66) 0 1px 4px;\\r\\n  cursor: pointer;\\r\\n  align-self: end;\\r\\n}\\r\\n\\r\\n.add-button:hover,\\r\\nbutton:hover {\\r\\n  background-color: rgb(209, 200, 190);\\r\\n}\\r\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://webpack-demo/./src/assets/css/style.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \":root {\\r\\n  --my-main-black: rgb(0, 0, 0);\\r\\n  --my-golden-orange: rgb(240, 138, 75);\\r\\n  --my-sky-blue: skyblue;\\r\\n  --my-header-footer-bg-color: rgb(243, 241, 238);\\r\\n}\\r\\n\\r\\n* {\\r\\n  margin: 0;\\r\\n  padding: 0;\\r\\n  box-sizing: border-box;\\r\\n}\\r\\n\\r\\nbody {\\r\\n  font-size: 16px;\\r\\n  font-family: 'Lato', sans-serif;\\r\\n  overflow: hidden;\\r\\n}\\r\\n\\r\\n.header-container {\\r\\n  box-shadow: 4px 3px 2px;\\r\\n  background-color: rgb(243, 241, 238);\\r\\n  width: 100%;\\r\\n  height: 90px;\\r\\n}\\r\\n\\r\\nnav ul {\\r\\n  display: flex;\\r\\n  gap: 60px;\\r\\n  align-items: center;\\r\\n  margin-left: 20%;\\r\\n  font-weight: bolder;\\r\\n  padding-top: 20px;\\r\\n}\\r\\n\\r\\nul li {\\r\\n  list-style: none;\\r\\n}\\r\\n\\r\\nul a {\\r\\n  text-decoration: none;\\r\\n  color: black;\\r\\n}\\r\\n\\r\\n.logo {\\r\\n  border: 2px solid;\\r\\n  padding: 10px;\\r\\n  font-weight: bold;\\r\\n  border-radius: 50%;\\r\\n}\\r\\n\\r\\nnav a:hover {\\r\\n  text-decoration: underline;\\r\\n}\\r\\n\\r\\n\\r\\n/* Footer section */\\r\\n\\r\\n.footer-section {\\r\\n  border-top: 1.5px solid black;\\r\\n  border-radius: 0.1%;\\r\\n  width: 100%;\\r\\n  height: 5%;\\r\\n  text-align: center;\\r\\n  background-color: var(--my-header-footer-bg-color);\\r\\n  position: fixed;\\r\\n  bottom: 0;\\r\\n}\\r\\n\\r\\n.footer-text {\\r\\n  padding: 1rem;\\r\\n  margin-right: 20px;\\r\\n}\\r\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://webpack-demo/./src/assets/css/style.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -106,16 +126,6 @@ eval("\n\n/* istanbul ignore next  */\nfunction apply(styleElement, options, obj
 /***/ ((module) => {
 
 eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElement) {\n  if (styleElement.styleSheet) {\n    styleElement.styleSheet.cssText = css;\n  } else {\n    while (styleElement.firstChild) {\n      styleElement.removeChild(styleElement.firstChild);\n    }\n    styleElement.appendChild(document.createTextNode(css));\n  }\n}\nmodule.exports = styleTagTransform;\n\n//# sourceURL=webpack://webpack-demo/./node_modules/style-loader/dist/runtime/styleTagTransform.js?");
-
-/***/ }),
-
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _assets_css_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/css/style.css */ \"./src/assets/css/style.css\");\n\r\n\r\n// const myFooter = document.getElementById('footer-section');\r\n// myFooter.innerHTML += footerText;\r\n\n\n//# sourceURL=webpack://webpack-demo/./src/index.js?");
 
 /***/ })
 
