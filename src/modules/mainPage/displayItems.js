@@ -37,7 +37,6 @@ export const mainPageItemsCounter = async () => {
 const displayItemsMain = async () => {
   try {
     const items = await await returnItems();
-    // Adding the items dynamically
     for (let i = 0; i < 24; i += 1) {
       const item = items[i];
       selectedItems.push(items[i]);
@@ -57,11 +56,15 @@ const displayItemsMain = async () => {
           <h3>
             ${item.name}
           </h3>
-          <p>
-            ${item.language}
-          </p>
+          
         </div>
-          <button class="items-buttons" data-item-index="${i}" id="itemPopup">Comments</button>
+          <button 
+            class="items-buttons" 
+            data-item-index="${i}" 
+            id="itemPopup"
+          >
+            Comments
+          </button>
         </div>`;
 
       const itemImage = document.createElement('div');
@@ -74,6 +77,19 @@ const displayItemsMain = async () => {
         itemImage.src = `${item.image.original}`;
         itemCardHtml.appendChild(itemImage);
       }
+
+      // Adding the like button and image
+      const likeButton = document.createElement('button');
+      likeButton.classList.add('like-buttons');
+      likeButton.dataset.itemIndex = i;
+      likeButton.id = 'itemLike';
+
+      const likeImage = document.createElement('img');
+      likeImage.src = '../assets/images/like-btn.png';
+
+      likeButton.appendChild(likeImage);
+      itemCardHtml.querySelector('.item-wrapped-elements').appendChild(likeButton);
+
       itemsDivHTML.innerHtml += itemCardHtml;
       itemsDivHTML.appendChild(itemCardHtml);
     }
@@ -84,5 +100,7 @@ const displayItemsMain = async () => {
   }
 };
 
+// Adding likes
+export const itemsLikes = document.querySelectorAll('.like-buttons');
 export const itemsButtons = document.querySelectorAll('.items-buttons');
 export default displayItemsMain;

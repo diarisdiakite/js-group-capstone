@@ -29,6 +29,17 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
       {
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'assets/images/[name][ext]',
+        },
+      },
+      {
+        test: /\.html$/i,
+        loader: 'html-loader',
+      },
+      {
         test: /\.js$/, // Use the babel-loader for JavaScript files
         exclude: /node_modules/,
         use: {
