@@ -89,8 +89,8 @@ nav a:hover {
   Main page
 */
 main {
-  height: 70vh;
-  margin-top: 90px;
+  min-height: 70vh;
+  margin: 2rem 0;
 }
 
 .main-items {
@@ -137,7 +137,8 @@ img {
   height: 5%;
   text-align: center;
   background-color: var(--my-header-footer-bg-color);
-  position: fixed;
+
+  /* position: fixed; */
   bottom: 0;
   padding: 0.5rem;
 }
