@@ -17,6 +17,9 @@ const displayItemsMain = async () => {
   const likes = await returnLikes();
 
   try {
+    // const items = await await returnItems();
+
+    // Adding the items dynamically
     for (let i = 0; i < 24; i += 1) {
       const item = items[i];
       selectedItems.push(items[i]);
@@ -37,6 +40,7 @@ const displayItemsMain = async () => {
           </h3>
           
         </div>
+          <button class="items-buttons" data-id=${item.id} data-item-index="${i}" id="itemPopup">Comments</button>
           <button 
             class="items-buttons" 
             data-item-index="${i}" 
