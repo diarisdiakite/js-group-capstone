@@ -1,12 +1,12 @@
 import axios from 'axios';
-// import { returnLikes } from "../globalElements/api";
-import { likesUrl } from '../globalElements/api';
+import { likesUrl } from '../globalElements/api.js';
 
 const addNewLike = async (itemId) => {
   try {
     const response = await axios.post(likesUrl, {
       item_id: itemId,
     });
+    window.location.reload();
     // return response.data.likes;
     return response.data.item_id;
   } catch (error) {
