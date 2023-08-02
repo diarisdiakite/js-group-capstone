@@ -1,4 +1,4 @@
-import counter from '../modules/mainPage/counter.js';
+import counter from '../modules/popup/counter.js';
 
 describe('counter function', () => {
   test('should update heading with the correct comment count', () => {
