@@ -6,6 +6,7 @@ export const itemsDivHTML = initializeItemsDivHTML();
 const displayItemsMain = async () => {
   try {
     const items = await await returnItems();
+
     // Adding the items dynamically
     for (let i = 0; i < 24; i += 1) {
       const item = items[i];
@@ -28,7 +29,7 @@ const displayItemsMain = async () => {
             ${item.language}
           </p>
         </div>
-          <button class="items-buttons" data-item-index="${i}" id="itemPopup">Comments</button>
+          <button class="items-buttons" data-id=${item.id} data-item-index="${i}" id="itemPopup">Comments</button>
         </div>`;
 
       const itemImage = document.createElement('div');
@@ -50,6 +51,5 @@ const displayItemsMain = async () => {
     return Promise.reject(errorMessage);
   }
 };
-
 export const itemsButtons = document.querySelectorAll('.items-buttons');
 export default displayItemsMain;
