@@ -1,14 +1,9 @@
 import { returnItems, returnLikes } from '../globalElements/api.js';
+import addNewLike from './addLikes.js';
 
 export const initializeItemsDivHTML = () => document.querySelector('.main-items');
 export const itemsDivHTML = initializeItemsDivHTML();
 const selectedItems = [];
-
-// Implementing the counter
-export const mainPageItemsCounter = async () => {
-  const items = await returnItems();
-  return items.length;
-};
 
 // Display Items
 const displayItemsMain = async () => {
@@ -16,8 +11,6 @@ const displayItemsMain = async () => {
   const likes = await returnLikes();
 
   try {
-    // const items = await await returnItems();
-
     // Adding the items dynamically
     for (let i = 0; i < 24; i += 1) {
       const item = items[i];
@@ -39,14 +32,15 @@ const displayItemsMain = async () => {
           </h3>
           
         </div>
-          <button class="items-buttons" data-id=${item.id} data-item-index="${i}" id="itemPopup">Comments</button>
           <button 
             class="items-buttons" 
+            data-id=${item.id} 
             data-item-index="${i}" 
             id="itemPopup"
           >
-            Comments
+          Comments
           </button>
+          
         </div>`;
 
       const itemImage = document.createElement('div');
@@ -77,6 +71,10 @@ const displayItemsMain = async () => {
       const likesCounts = itemsLikes ? itemsLikes.likes : 0;
       likesCountHTML.textContent = likesCounts || 0;
       itemCardHtml.querySelector('.item-wrapped-elements').appendChild(likesCountHTML);
+
+      likeButton.addEventListener('click', () => {
+        addNewLike(item.id);
+      });
 
       itemsDivHTML.innerHtml += itemCardHtml;
       itemsDivHTML.appendChild(itemCardHtml);
