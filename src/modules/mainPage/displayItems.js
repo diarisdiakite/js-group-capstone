@@ -1,4 +1,5 @@
 import { returnItems, returnLikes } from '../globalElements/api.js';
+import addNewLike from './addLikes.js';
 
 export const initializeItemsDivHTML = () => document.querySelector('.main-items');
 export const itemsDivHTML = initializeItemsDivHTML();
@@ -70,9 +71,22 @@ const displayItemsMain = async () => {
 
       const likesCountHTML = document.createElement('div');
       const itemsLikes = likes.find((like) => like.item_id === item.id);
-      const likesCounts = itemsLikes ? itemsLikes.likes : 0;
+      let likesCounts = itemsLikes ? itemsLikes.likes : 0;
       likesCountHTML.textContent = likesCounts || 0;
       itemCardHtml.querySelector('.item-wrapped-elements').appendChild(likesCountHTML);
+
+      likeButton.addEventListener('click', async () => {
+        try {
+          const updatedItemId = await addNewLike(item.id);
+          if (updatedItemId === item.id) {
+            // Update the likes count directly using the returned updated item_id
+            likesCounts += 1;
+            likesCountHTML.textContent = likesCounts;
+          }
+        } catch (error) {
+          console.error(error);
+        }
+      });
 
       itemsDivHTML.innerHtml += itemCardHtml;
       itemsDivHTML.appendChild(itemCardHtml);
