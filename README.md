@@ -42,8 +42,7 @@
 ## 📖 [movieboard-project](#movieboard-project)
 ### 📖 <a name="about-the-project">Description </a>
 
-The [Movieboard-project]() is an App that allows users to keep track of their favorite movies, shows, and series. The user can add a like and a comment to his favorite show. 
-The project makes an API call to TVMave API and Involvement API to update the UI and keep track of the comments and likes.
+The [Movieboard project]() is an App that allows users to keep track of their favorite movies, shows, and series. The user can add a like and a comment to their favorite show. The project makes an API call to TVMave API and Microverse's Involvement API to update the UI and keep track of the comments and likes.
 
 [`Back to top`](#readme-top)
 
@@ -140,16 +139,16 @@ GitHub: [@diarisd](github.com/diarisdiakite)
 
 👤 Asiimwe Mark
 
-- GitHub: @[As1imwe-Mark](https://github.com/As1imwe-Mark)
-- Twitter:@[markasiimwe](https://twitter.com/MarkAsiimwe?t=fPfXM4CV3OU6gKMNB1RGDA&s=09)
-- LinkedIn:@[Mark Asiimwe](https://www.linkedin.com/in/mark-asiimwe-0ab0611ab)
+<br> GitHub: @[As1imwe-Mark](https://github.com/As1imwe-Mark)
+<br> Twitter:@[markasiimwe](https://twitter.com/MarkAsiimwe?t=fPfXM4CV3OU6gKMNB1RGDA&s=09)
+<br> LinkedIn:@[Mark Asiimwe](https://www.linkedin.com/in/mark-asiimwe-0ab0611ab)
   
 
 [`Back to top`](#readme-top)
 
 ## 🔭 <a name="future-features">Future Features</a>
 Upcoming features will include:
- -Add a movie rental page and streaming capabilities.
+- Add a movie rental page and streaming capabilities.
  
 [`Back to top`](#readme-top)
 
@@ -161,13 +160,13 @@ Please check the issues page.
 [`Back to top`](#readme-top)
 
 ## ⭐️ <a name="show-your-support">Show your support</a>
-If you like my [movieboard]() you can support my work. Visit [my personal page](https://diarisdiakite.github.io/my-portfolio/).
-Please follow us on [@linkedin.com/diariatou-diakite](https://www.linkedin.com/in/diariatou-diakite-67ab80165/) and [@twitter.com/diarisd](https://twitter.com/diarisdiakite)
+If you like the [movieboard]() you can support our work. Visit othe links [Didy personal page](https://diarisdiakite.github.io/my-portfolio/) and [Mark personal page](https://as1imwe-mark.github.io/Portifolio_Website/).
+
 
 [`Back to top`](#readme-top)
 
 ## 🙏 <a name="acknowledgments">Acknowledgments</a>
-I would like to thank the Microverse community to inspire and encourage everyday programmers and aspiring programmers.
+We would like to thank the Microverse community to inspire and encourage everyday programmers and aspiring programmers.
  
 [`Back to top`](#readme-top)
 
@@ -182,12 +181,13 @@ Yes! Make sure you give us credit of the application.
 ### `Where can we reach out to you ?`
 
 #### `Answer`
-You can reach out to the organisation team by email [diarisdiakite@gmail.com](diarisdiakite@gmail.com). 
+You can reach out to us team by email [diarisdiakite@gmail.com](diarisdiakite@gmail.com) and [asmarka@outlook.com](asmarka@outlook.com)
 
 [`Back to top`](#readme-top)
 
 ## 📝 <a name="credit">Credit</a>
-this application was build by [Didy](https://diarisdiakite.github.io/my-portfolio/) proudly developed in [Microverse](https://www.microverse.org) program. 
+this application was build by [Didy](https://diarisdiakite.github.io/my-portfolio/) and [Mark](https://as1imwe-mark.github.io/Portifolio_Website/) 
+proudly developed in [Microverse](https://www.microverse.org) program. 
 
 [`Back to top`](#readme-top)
 
