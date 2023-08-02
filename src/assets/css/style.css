@@ -89,15 +89,15 @@ nav a:hover {
   Main page
 */
 main {
-  height: 70vh;
-  margin-top: 90px;
+  min-height: 100vh;
+  margin: 2rem 0;
 }
 
 .main-items {
   width: 100vw;
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns */
-  grid-auto-rows: minmax(0, 1fr); /* Allow rows to be repeated */
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-rows: minmax(0, 1fr);
   gap: 1%;
   margin: 0;
 }
@@ -142,7 +142,9 @@ img {
   overflow-y: scroll;
 }
 
-.comment-pop-up h2, h3, h1 {
+.comment-pop-up h2,
+h3,
+h1 {
   text-align: center;
   margin: 3%;
 }
@@ -157,7 +159,7 @@ img {
   flex-direction: column;
   padding: 10px 12%;
   border: 2px solid;
-  overflow-y:scroll;
+  overflow-y: scroll;
   z-index: 99999;
 }
 
@@ -172,12 +174,13 @@ img {
 
 .show-image {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 
 .show-image img {
   width: 80%;
   height: 300px;
+
   /* object-fit:top center; */
 }
 
@@ -221,6 +224,14 @@ form {
   display: block;
 }
 
+.like-item {
+  background-image: url(../images/like-btn.png);
+}
+
+.item-liked {
+  background-image: url(../images/unlike-btn.png);
+}
+
 /* Footer section */
 
 .footer-section {
@@ -230,10 +241,10 @@ form {
   height: 5%;
   text-align: center;
   background-color: var(--my-header-footer-bg-color);
-  position: fixed;
+
+  /* position: fixed; */
   bottom: 0;
   padding: 0.5rem;
-
 }
 
 .footer-text {
@@ -241,21 +252,20 @@ form {
   margin: 1rem;
 }
 
-
 /*
   MEDIA QUERIES
 */
 
 /* Main Page */
 @media (min-width: 768px) {
-  .main-items {
-    gap: 1% 0%;
-    margin-left: 0;
+  body {
+    width: 100vw;
   }
 
-  .item {
-    height: 20rem;
-    margin: 0 0.1%;
-    gap: 0.1%;
+  .main-items {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(0, 1fr);
   }
 }

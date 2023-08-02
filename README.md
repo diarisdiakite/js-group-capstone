@@ -1,5 +1,5 @@
 <a name="readme-top"></a>
-# 📖 [Leaderboard-project](#leaderboard-project)
+# 📖 [Movieboard-project](#movieboard-project)
 
 📗 Table of Contents
 
@@ -39,10 +39,10 @@
 
 <br><br>
 
-## 📖 [leaderboard-project](#leaderboard-project)
+## 📖 [movieboard-project](#movieboard-project)
 ### 📖 <a name="about-the-project">Description </a>
 
-The [Leaderboard-project]() is a Single Page App that allows users to keep track of their performances in a game by adding players and scores and perform basics operations like list all scores from the application. The players are sorted by name to give users a better experience.
+The [Movieboard-project]() is a Single Page App that allows users to keep track of their performances in a game by adding players and scores and perform basics operations like list all scores from the application. The players are sorted by name to give users a better experience.
 
 [`Back to top`](#readme-top)
 
@@ -60,7 +60,7 @@ client: HTML, CSS and Javascript.
 
 ### <a name="key-features"> Key Features </a>
 
-`leaderboard-project` key features are the following main projects:
+`movieboard-project` key features are the following main projects:
 
 ```
 Project-feature1: Create a new game from API 
@@ -76,7 +76,7 @@ Project-feature6: Application deploy
 
 ## 🚀 <a name="live-demo"> Live Demo </a>
 
-You can access the leaderboard at this link below.
+You can access the movieboard at this link below.
 
 coming soon
 
@@ -89,7 +89,7 @@ coming soon
 Clone this repository to your desired folder:
 
 ```sh
-git clone https://github.com/diarisdiakite/leaderboard/
+git clone https://github.com/diarisdiakite/js-group-capstone/
 
 ```
 [`Back to top`](#readme-top)
@@ -106,7 +106,7 @@ Basics understanding of Linters
 Install the project with: [npm](https://www.npmjs.com/)
 
 ```[npm]
-git clone https://github.com/diarisdiakite/leaderboard/
+git clone https://github.com/diarisdiakite/movieboard/
 
 run npx json-server -p 3500 -w data/db.json
 ```
@@ -114,7 +114,7 @@ run npx json-server -p 3500 -w data/db.json
 [`Back to top`](#readme-top)
 
 ###<a name="usage">Usage</a>
-To run the leaderboard application, execute the following command: Open the project in code editor
+To run the movieboard application, execute the following command: Open the project in code editor
 
 [`Back to top`](#readme-top)
 
@@ -124,7 +124,7 @@ To run tests, run the following command: Open the project in code editor and run
 [`Back to top`](#readme-top)
 
 ### <a name="deployment">Deployment</a>
-You can deploy the leaderboard application using: google cloud, Microsoft Azure, Netlify by giving credit on usign our template or contricute via pull requests (read more in the contributing section).
+You can deploy the movieboard application using: google cloud, Microsoft Azure, Netlify by giving credit on usign our template or contricute via pull requests (read more in the contributing section).
 
 [`Back to top`](#readme-top)
 
@@ -135,6 +135,13 @@ You can deploy the leaderboard application using: google cloud, Microsoft Azure,
 GitHub: [@diarisd](github.com/diarisdiakite)
 <br> Twitter: [@diarisdiakite](www.twitter.com/diarisdiakite)
 <br> LinkedIn: [@diariatou-diakite](https://www.linkedin.com/in/diariatou-diakite-67ab80165/)
+<br><br>
+
+👤 Mark
+
+GitHub: [@as1imwe]()
+<br> Twitter: [@Twitter]()
+<br> LinkedIn: [@Linkedin]()
 <br><br>
 
 [`Back to top`](#readme-top)
@@ -155,7 +162,7 @@ Please check the issues page.
 [`Back to top`](#readme-top)
 
 ## ⭐️ <a name="show-your-support">Show your support</a>
-If you like my [leaderboard]() you can support my work. Visit [my personal page](https://diarisdiakite.github.io/my-portfolio/).
+If you like my [movieboard]() you can support my work. Visit [my personal page](https://diarisdiakite.github.io/my-portfolio/).
 Please follow us on [@linkedin.com/diariatou-diakite](https://www.linkedin.com/in/diariatou-diakite-67ab80165/) and [@twitter.com/diarisd](https://twitter.com/diarisdiakite)
 
 [`Back to top`](#readme-top)
