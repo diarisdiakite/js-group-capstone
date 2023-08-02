@@ -1,46 +1,24 @@
-import { returnItems } from '../globalElements/api.js';
+import { returnItems, returnLikes } from '../globalElements/api.js';
 
 export const initializeItemsDivHTML = () => document.querySelector('.main-items');
 export const itemsDivHTML = initializeItemsDivHTML();
 const selectedItems = [];
 
 // Implementing the counter
-export const returnSelectedItems = async () => {
-  if (selectedItems.length === 0) {
-    try {
-      const items = await await returnItems();
-      // Adding the items dynamically
-      for (let i = 0; i < 24; i += 1) {
-        selectedItems.push(items[i]);
-      }
-      return selectedItems;
-    } catch (error) {
-      const errorMessage = `couldn't find the items. ${error}`;
-      return Promise.reject(errorMessage);
-    }
-  } else {
-    return selectedItems;
-  }
-};
-
 export const mainPageItemsCounter = async () => {
-  await returnSelectedItems();
-  return selectedItems.length;
+  const items = await returnItems();
+  return items.length;
 };
-
-(async () => {
-  const selectedItems = await returnSelectedItems();
-  return selectedItems.length;
-})();
 
 // Display Items
 const displayItemsMain = async () => {
+  const items = await returnItems();
+  const likes = await returnLikes();
+
   try {
-    const items = await await returnItems();
     for (let i = 0; i < 24; i += 1) {
       const item = items[i];
       selectedItems.push(items[i]);
-
       const itemCardHtml = document.createElement('div');
       itemCardHtml.classList.add('item');
       itemCardHtml.innerHTML = `
@@ -89,6 +67,12 @@ const displayItemsMain = async () => {
 
       likeButton.appendChild(likeImage);
       itemCardHtml.querySelector('.item-wrapped-elements').appendChild(likeButton);
+
+      const likesCountHTML = document.createElement('div');
+      const itemsLikes = likes.find((like) => like.item_id === item.id);
+      const likesCounts = itemsLikes ? itemsLikes.likes : 0;
+      likesCountHTML.textContent = likesCounts || 0;
+      itemCardHtml.querySelector('.item-wrapped-elements').appendChild(likesCountHTML);
 
       itemsDivHTML.innerHtml += itemCardHtml;
       itemsDivHTML.appendChild(itemCardHtml);

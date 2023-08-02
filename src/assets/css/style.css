@@ -89,15 +89,15 @@ nav a:hover {
   Main page
 */
 main {
-  min-height: 70vh;
+  min-height: 100vh;
   margin: 2rem 0;
 }
 
 .main-items {
   width: 100vw;
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns */
-  grid-auto-rows: minmax(0, 1fr); /* Allow rows to be repeated */
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-rows: minmax(0, 1fr);
   gap: 1%;
   margin: 0;
 }
@@ -162,14 +162,14 @@ img {
 
 /* Main Page */
 @media (min-width: 768px) {
-  .main-items {
-    gap: 1% 0%;
-    margin-left: 0;
+  body {
+    width: 100vw;
   }
 
-  .item {
-    height: 20rem;
-    margin: 0 0.1%;
-    gap: 0.1%;
+  .main-items {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(0, 1fr);
   }
 }
