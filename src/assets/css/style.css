@@ -56,12 +56,18 @@ button:hover {
   height: 90px;
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 nav ul {
   display: flex;
-  gap: 60px;
   align-items: center;
-  margin-left: 20%;
+  margin-right: 8%;
   font-weight: bolder;
+  gap: 2rem;
   padding-top: 20px;
 }
 
@@ -79,6 +85,7 @@ ul a {
   padding: 10px;
   font-weight: bold;
   border-radius: 50%;
+  margin: 1% 10% 0;
 }
 
 nav a:hover {
@@ -157,7 +164,7 @@ h1 {
   bottom: 30px;
   display: flex;
   flex-direction: column;
-  padding: 10px 12%;
+  padding: 10px 6% 10px 12%;
   border: 2px solid;
   overflow-y: scroll;
   z-index: 99999;
@@ -173,21 +180,21 @@ h1 {
 }
 
 .show-image {
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
 .show-image img {
-  width: 80%;
-  height: 300px;
-
-  /* object-fit:top center; */
+  width: 90%;
+  height: 400px;
 }
 
 .closeBtn {
   font-size: 3rem;
   font-weight: bold;
   cursor: pointer;
+  margin-left: 1rem;
 }
 
 form {

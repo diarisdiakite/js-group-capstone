@@ -42,7 +42,8 @@
 ## 📖 [movieboard-project](#movieboard-project)
 ### 📖 <a name="about-the-project">Description </a>
 
-The [Movieboard-project]() is a Single Page App that allows users to keep track of their performances in a game by adding players and scores and perform basics operations like list all scores from the application. The players are sorted by name to give users a better experience.
+The [Movieboard-project]() is an App that allows users to keep track of their favorite movies, shows, and series. The user can add a like and a comment to his favorite show. 
+The project makes an API call to TVMave API and Involvement API to update the UI and keep track of the comments and likes.
 
 [`Back to top`](#readme-top)
 
@@ -63,10 +64,10 @@ client: HTML, CSS and Javascript.
 `movieboard-project` key features are the following main projects:
 
 ```
-Project-feature1: Create a new game from API 
-Project-feature2: get all scores from API 
-Project-feature3: Add score 
-Project-feature4: List all scores
+Project-feature1: Create a new application from API 
+Project-feature2: get all shows and movies from API 
+Project-feature3: Add comments and likes
+Project-feature4: List all comments and likes counts.
 Project-feature5: Optimisation
 Project-feature6: Application deploy
 
@@ -98,7 +99,7 @@ git clone https://github.com/diarisdiakite/js-group-capstone/
 In order to run the projects on this project you need:
 Have some knowledge of HTML and CSS
 Be familiar with git commands
-Basics understanding of Linters
+Basics understanding of Linters, webpack, and NPM.
 
 [`Back to top`](#readme-top)
 
@@ -114,12 +115,12 @@ run npx json-server -p 3500 -w data/db.json
 [`Back to top`](#readme-top)
 
 ###<a name="usage">Usage</a>
-To run the movieboard application, execute the following command: Open the project in code editor
+To run the movieboard application, execute the following command: Open the project in code editor and run the project using npm start.
 
 [`Back to top`](#readme-top)
 
 ### <a name="run-test">Run tests</a>
-To run tests, run the following command: Open the project in code editor and run the tests
+To run tests, run the following command: Open the project in code editor and run the tests using npm test.
 
 [`Back to top`](#readme-top)
 
@@ -137,20 +138,18 @@ GitHub: [@diarisd](github.com/diarisdiakite)
 <br> LinkedIn: [@diariatou-diakite](https://www.linkedin.com/in/diariatou-diakite-67ab80165/)
 <br><br>
 
-👤 Mark
+👤 Asiimwe Mark
 
-GitHub: [@as1imwe]()
-<br> Twitter: [@Twitter]()
-<br> LinkedIn: [@Linkedin]()
-<br><br>
+- GitHub: @[As1imwe-Mark](https://github.com/As1imwe-Mark)
+- Twitter:@[markasiimwe](https://twitter.com/MarkAsiimwe?t=fPfXM4CV3OU6gKMNB1RGDA&s=09)
+- LinkedIn:@[Mark Asiimwe](https://www.linkedin.com/in/mark-asiimwe-0ab0611ab)
+  
 
 [`Back to top`](#readme-top)
 
 ## 🔭 <a name="future-features">Future Features</a>
 Upcoming features will include:
-
- [Display-task's-descrition]
- 
+ -Add a movie rental page and streaming capabilities.
  
 [`Back to top`](#readme-top)
 
@@ -169,9 +168,7 @@ Please follow us on [@linkedin.com/diariatou-diakite](https://www.linkedin.com/i
 
 ## 🙏 <a name="acknowledgments">Acknowledgments</a>
 I would like to thank the Microverse community to inspire and encourage everyday programmers and aspiring programmers.
-
-Many thanks to my coding partners and particularly to [@Roman-adi](https://github.com/romans-adi) and [lincoln Gibson](https://github.com/lincoln1883) for their great hints during my Microverse Journey. 
-
+ 
 [`Back to top`](#readme-top)
 
 ## ❓ <a name="faq">FAQ (OPTIONAL)</a>
