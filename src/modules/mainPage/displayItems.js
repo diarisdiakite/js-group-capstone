@@ -19,7 +19,7 @@ const displayItemsMain = async () => {
       itemCardHtml.classList.add('item');
       itemCardHtml.innerHTML = `
 
-        <img class="item-image" 
+        <img class="item-image-img" 
           src=${item.image.medium} 
           alt="item-image" 
           placeholder="image for item 1">
@@ -55,13 +55,13 @@ const displayItemsMain = async () => {
 
       const itemsLikeHtml = document.createElement('div');
       itemsLikeHtml.classList.add('items-likes');
-      
+
       // Adding the like button and image
       const likeButton = document.createElement('button');
       likeButton.classList.add('like-buttons');
       likeButton.dataset.itemIndex = i;
-      likeButton.id = 'itemLike'; 
-      
+      likeButton.id = 'itemLike';
+
       const likeImage = document.createElement('img');
       likeImage.src = '../assets/images/like-btn.png';
       likeButton.appendChild(likeImage);
@@ -72,7 +72,7 @@ const displayItemsMain = async () => {
       const likesCounts = itemsLikes ? itemsLikes.likes : 0;
       likesCountHTML.textContent = `${likesCounts} Likes` || 0;
       itemsLikeHtml.appendChild(likesCountHTML);
-      
+
       itemCardHtml.querySelector('.item-wrapped-elements').appendChild(itemsLikeHtml);
 
       likeButton.addEventListener('click', () => {

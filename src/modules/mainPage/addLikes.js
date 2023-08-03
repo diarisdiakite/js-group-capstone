@@ -7,7 +7,7 @@ const addNewLike = async (itemId) => {
       item_id: itemId,
     });
     window.location.reload();
-    return response.data.item_id; //or return likes
+    return response.data.item_id; // or return likes
   } catch (error) {
     const errorMessage = `Couldn't add your like, ${error}`;
     return errorMessage;

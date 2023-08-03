@@ -14,8 +14,6 @@ const displayComment = async (Item) => {
         counter(comments, heading, commentContainer);
       });
     }
-    
   });
-  
 };
 export default displayComment;
