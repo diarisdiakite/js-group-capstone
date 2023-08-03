@@ -1,3 +1,5 @@
+import displayComment from './displayComment.js';
+
 const commentInput = (Item) => {
   const form = document.querySelector('#form');
   form.addEventListener('submit', async (e) => {
@@ -14,6 +16,7 @@ const commentInput = (Item) => {
     });
     document.getElementById('name').value = '';
     document.getElementById('comment').value = '';
+    await displayComment(Item);
   });
 };
 
