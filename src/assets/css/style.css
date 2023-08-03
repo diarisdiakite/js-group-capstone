@@ -26,24 +26,29 @@ button {
   border: none;
   cursor: pointer;
   height: 1.5rem;
-  box-shadow: rgba(119, 117, 117, 0.66) 0 1px 4px;
+  /* box-shadow: rgba(119, 117, 117, 0.66) 0 1px 4px; */
   background-color: #fff;
   padding: 1%;
 }
 
-.add-button {
+.add-button, 
+.items-buttons {
   border: none;
   height: 2rem;
   width: 4.5rem;
   font-family: 'Lato', sans-serif;
   box-shadow: rgba(0, 0, 0, 0.66) 0 1px 4px;
   cursor: pointer;
-  align-self: end;
 }
 
 .add-button:hover,
 button:hover {
   background-color: rgb(209, 200, 190);
+  background: url(../images/item-liked-btn.png) no-repeat center;
+}
+
+.items-buttons:hover {
+  background: none
 }
 
 /*
@@ -131,8 +136,35 @@ img {
 }
 
 .item-wrapped-elements {
+  width: 40%;
   display: flex;
   justify-content: space-between;
+}
+
+.item-wrapped-elements:first-child{
+  width: 90%;
+  align-self: flex-start;
+}
+
+.items-likes {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+}
+
+/* implement to change the button when wlicke once */
+.like-item {
+  width: 100%;
+  height: 100%;
+  background: url(../images/like-btn.png) no-repeat;
+  background-size: 100%;
+}
+
+.item-liked {
+  width: 100%;
+  height: 100%;
+  background: url(../images/item-liked-btn.png) no-repeat;
+  background-size: 100%;
 }
 
 /* Comment pop up window */
@@ -229,20 +261,6 @@ form {
 
 .open-pop {
   display: block;
-}
-
-.like-item {
-  width: 100%;
-  height: 100%;
-  background: url(../images/like-btn.png) no-repeat;
-  background-size: 100%;
-}
-
-.item-liked {
-  width: 100%;
-  height: 100%;
-  background: url(../images/item-liked-btn.png) no-repeat;
-  background-size: 100%;
 }
 
 /* Footer section */

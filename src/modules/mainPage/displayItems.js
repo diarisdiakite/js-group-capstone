@@ -24,24 +24,23 @@ const displayItemsMain = async () => {
           alt="item-image" 
           placeholder="image for item 1">
         </img>
-        
-        
+
         <div class="item-wrapped-elements">
           <h3>
             ${item.name}
           </h3>
           
         </div>
-          <button 
-            class="items-buttons" 
-            data-id=${item.id} 
-            data-item-index="${i}" 
-            id="itemPopup"
-          >
-          Comments
-          </button>
-          
-        </div>`;
+
+        <button 
+          class="items-buttons" 
+          data-id=${item.id} 
+          data-item-index="${i}" 
+          id="itemPopup"
+        >
+        Comments
+        </button>
+      `;
 
       const itemImage = document.createElement('div');
       itemImage.setAttribute('blur', '100');
@@ -54,23 +53,27 @@ const displayItemsMain = async () => {
         itemCardHtml.appendChild(itemImage);
       }
 
+      const itemsLikeHtml = document.createElement('div');
+      itemsLikeHtml.classList.add('items-likes');
+      
       // Adding the like button and image
       const likeButton = document.createElement('button');
       likeButton.classList.add('like-buttons');
       likeButton.dataset.itemIndex = i;
-      likeButton.id = 'itemLike';
-
+      likeButton.id = 'itemLike'; 
+      
       const likeImage = document.createElement('img');
       likeImage.src = '../assets/images/like-btn.png';
-
       likeButton.appendChild(likeImage);
-      itemCardHtml.querySelector('.item-wrapped-elements').appendChild(likeButton);
+      itemsLikeHtml.appendChild(likeButton);
 
       const likesCountHTML = document.createElement('div');
       const itemsLikes = likes.find((like) => like.item_id === item.id);
       const likesCounts = itemsLikes ? itemsLikes.likes : 0;
-      likesCountHTML.textContent = likesCounts || 0;
-      itemCardHtml.querySelector('.item-wrapped-elements').appendChild(likesCountHTML);
+      likesCountHTML.textContent = `${likesCounts} Likes` || 0;
+      itemsLikeHtml.appendChild(likesCountHTML);
+      
+      itemCardHtml.querySelector('.item-wrapped-elements').appendChild(itemsLikeHtml);
 
       likeButton.addEventListener('click', () => {
         addNewLike(item.id);
