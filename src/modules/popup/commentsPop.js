@@ -1,5 +1,6 @@
 import getItems from '../globalElements/api.js';
 import commentInput from './createComment.js';
+import displayComment from './displayComment.js';
 
 const commentPopUp = () => {
   const container = document.querySelector('.main-items');
@@ -36,6 +37,7 @@ const commentPopUp = () => {
             popUp.classList.remove('open-pop');
           });
           commentInput(Item);
+          displayComment(Item);
         }
       });
     }

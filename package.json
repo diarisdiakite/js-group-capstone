@@ -38,7 +38,7 @@
     "url-util": "^1.2.10",
     "webpack": "^5.82.0",
     "webpack-cli": "^5.1.0",
-    "webpack-dev-server": "^4.15.0"
+    "webpack-dev-server": "^4.15.1"
   },
   "dependencies": {
     "animate.css": "^4.1.1",

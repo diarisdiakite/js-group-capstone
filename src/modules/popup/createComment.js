@@ -16,7 +16,7 @@ const commentInput = (Item) => {
     });
     document.getElementById('name').value = '';
     document.getElementById('comment').value = '';
-    await displayComment(Item);
+    displayComment(Item);
   });
 };
 
