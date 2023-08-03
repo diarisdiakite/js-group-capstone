@@ -1,7 +1,7 @@
 import counter from './counter.js';
 
 const displayComment = async (Item) => {
-  await fetch(`https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/qERiOUdIIcsyXktZm12r/comments?item_id=${Item.id}`).then((res) => res.json()).then((data) => {
+  await fetch(`https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/o489efAMFwz4kpcDZkaq/comments?item_id=${Item.id}`).then((res) => res.json()).then((data) => {
     const comments = data;
     const commentContainer = document.querySelector('.comment-section');
     const heading = document.querySelector('.heading');

@@ -9,7 +9,7 @@ const commentInput = (Item) => {
     if (name === '' || insight === '') {
       return;
     }
-    await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/qERiOUdIIcsyXktZm12r/comments/', {
+    await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/o489efAMFwz4kpcDZkaq/comments/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ item_id: Item.id, username: name, comment: insight }),
