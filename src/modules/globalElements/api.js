@@ -1,11 +1,8 @@
 import axios from 'axios';
 
 export const mainUrl = 'https://api.tvmaze.com/shows';
-// Involvement
 export const appId = 'o489efAMFwz4kpcDZkaq';
 export const likesUrl = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/o489efAMFwz4kpcDZkaq/likes/';
-// export const likesUrl = `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${appId}/likes/`;
-// export const commentsUrl = `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/o489efAMFwz4kpcDZkaq/comments/`;
 
 const getItems = async () => {
   try {
