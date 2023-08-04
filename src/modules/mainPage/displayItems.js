@@ -69,14 +69,16 @@ const displayItemsMain = async () => {
 
       const likesCountHTML = document.createElement('div');
       const itemsLikes = likes.find((like) => like.item_id === item.id);
-      const likesCounts = itemsLikes ? itemsLikes.likes : 0;
+      let likesCounts = itemsLikes ? itemsLikes.likes : 0;
       likesCountHTML.textContent = `${likesCounts} Likes` || 0;
       itemsLikeHtml.appendChild(likesCountHTML);
 
       itemCardHtml.querySelector('.item-wrapped-elements').appendChild(itemsLikeHtml);
 
-      likeButton.addEventListener('click', () => {
-        addNewLike(item.id);
+      likeButton.addEventListener('click', async () => {
+        likesCounts += 1;
+        likesCountHTML.textContent = `${likesCounts} Likes`;
+        await addNewLike(item.id);
       });
 
       itemsDivHTML.innerHtml += itemCardHtml;

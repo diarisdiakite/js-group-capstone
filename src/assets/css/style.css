@@ -143,6 +143,7 @@ img {
 .item-image-img {
   width: 100%;
   height: auto;
+  box-shadow: 2px 3px 3px;
 }
 
 .item-wrapped-elements {
